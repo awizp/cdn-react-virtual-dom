@@ -1,10 +1,10 @@
 # Real DOM vs Virtual DOM | React vs JavaScript
 
-    * This project shows the difference between Real DOM (Vanilla JS) and Virtual DOM (React) using a simple Card component.
+* This project shows the difference between Real DOM (Vanilla JS) and Virtual DOM (React) using a simple Card component.
 
 ### 🔵 Real DOM | Vanilla JavaScript
 
-    * We manually create and update elements using createElement() and appendChild(). It directly updates the actual browser DOM whenever changes happen.
+* We manually create and update elements using createElement() and appendChild(). It directly updates the actual browser DOM whenever changes happen.
 
     <code>
         const root = document.getElementById("root");
@@ -27,7 +27,7 @@
 
 ### ⚛️ Virtual DOM | React
 
-    * React uses state and JSX. It compares changes in a Virtual DOM before updating the real DOM. React updates only the changed part instead of re-rendering the full UI.
+* React uses state and JSX. It compares changes in a Virtual DOM before updating the real DOM. React updates only the changed part instead of re-rendering the full UI.
 
     <code>
         import { useState } from "react";
