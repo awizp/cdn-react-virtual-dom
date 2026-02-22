@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+.main-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 5px;
+}
+
+/* Info */
+.info-text {
+  margin: 6px 0;
+  color: #475569;
+}
+
+/* Skills */
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item {
+  background: #e0f2fe;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #0369a1;
+}
+
+/* Projects */
+.project {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin: 6px 0;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.completed {
+  color: #16a34a;
+}
+
+.progress {
+  color: #f59e0b;
+}
