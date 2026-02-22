@@ -7,6 +7,7 @@
 * We manually create and update elements using createElement() and appendChild(). It directly updates the actual browser DOM whenever changes happen.
 
     
+    ```
     const root = document.getElementById("root");
 
     const card = document.createElement("div");
@@ -23,12 +24,14 @@
     card.appendChild(title);
     card.appendChild(button);
     root.appendChild(card);
+    ```
 
 ### ⚛️ Virtual DOM | React
 
 * React uses state and JSX. It compares changes in a Virtual DOM before updating the real DOM. React updates only the changed part instead of re-rendering the full UI.
 
     
+    ```
     import { useState } from "react";
 
     function Card() {
@@ -45,3 +48,4 @@
     }
 
     export default Card;
+    ```
