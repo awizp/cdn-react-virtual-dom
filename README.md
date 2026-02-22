@@ -1,4 +1,4 @@
-# Real DOM vs Virtual DOM | React vs JavaScript
+## Real DOM vs Virtual DOM | React vs JavaScript
 
 * This project shows the difference between Real DOM (Vanilla JS) and Virtual DOM (React) using a simple Card component.
 
