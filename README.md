@@ -6,44 +6,42 @@
 
 * We manually create and update elements using createElement() and appendChild(). It directly updates the actual browser DOM whenever changes happen.
 
-    <code>
-        const root = document.getElementById("root");
+    
+    const root = document.getElementById("root");
 
-        const card = document.createElement("div");
-        const title = document.createElement("h2");
-        const button = document.createElement("button");
+    const card = document.createElement("div");
+    const title = document.createElement("h2");
+    const button = document.createElement("button");
 
-        title.innerText = "Real DOM Card";
-        button.innerText = "Click Me";
+    title.innerText = "Real DOM Card";
+    button.innerText = "Click Me";
 
-        button.addEventListener("click", () => {
-            title.innerText = "Updated using Real DOM";
-        });
+    button.addEventListener("click", () => {
+        title.innerText = "Updated using Real DOM";
+    });
 
-        card.appendChild(title);
-        card.appendChild(button);
-        root.appendChild(card);
-    </code>
+    card.appendChild(title);
+    card.appendChild(button);
+    root.appendChild(card);
 
 ### ⚛️ Virtual DOM | React
 
 * React uses state and JSX. It compares changes in a Virtual DOM before updating the real DOM. React updates only the changed part instead of re-rendering the full UI.
 
-    <code>
-        import { useState } from "react";
+    
+    import { useState } from "react";
 
-        function Card() {
-            const [title, setTitle] = useState("Virtual DOM Card");
+    function Card() {
+        const [title, setTitle] = useState("Virtual DOM Card");
 
-            return (
-                <div>
-                    <h2>{title}</h2>
-                    <button onClick={() => setTitle("Updated using Virtual DOM")}>
-                        Click Me
-                    </button>
-                </div>
-            );
-        }
+        return (
+            <div>
+                <h2>{title}</h2>
+                <button onClick={() => setTitle("Updated using Virtual DOM")}>
+                    Click Me
+                </button>
+            </div>
+        );
+    }
 
-        export default Card;
-    </code>
+    export default Card;
